@@ -1,0 +1,99 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#130922"><meta name="description" content="Sara — a private lantern-lit little world"><title>Sara — Home</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="auth-lock.css"><script type="module" src="auth-guard.js"></script></head><body data-page="home">
+<div class="lantern-layer" aria-hidden="true"></div>
+<header class="site-header"><a class="brand" href="index.html">Sara</a><nav class="nav"><a href="index.html" data-page="home">Home</a><a href="letters.html" data-page="letters">Letters</a><a href="gallery.html" data-page="gallery">Gallery</a><a href="chat.html" data-page="chat">Chat</a><a href="movies.html" data-page="movies">Movie Night</a><a href="wishes.html" data-page="wishes">Wishes</a></nav><div class="header-actions"><button class="icon-btn" id="headerMusic" title="Music">♪</button><a class="icon-btn" href="admin.html" title="Admin">⚙</a><button class="icon-btn" id="orizaLogout" title="Logout">↪</button></div></header>
+<main class="page-shell fullscreen-home-shell">
+  <section class="hero-free-layout" aria-label="Homepage hero section">
+    <article class="feature-card glass corner-card letter-corner-card" data-tilt>
+      <div class="card-copy">
+        <h2>Love Letters</h2>
+        <p>Every word I write carries my heart to you.</p>
+      </div>
+      <img class="card-art" src="assets/envelope.jpg" alt="Golden sealed letter">
+      <a class="card-link" href="letters.html">Open Letters <span>→</span></a>
+    </article>
+
+    <section class="floating-center true-center">
+      <div class="floating-center-copy">
+        <div class="crown clean-crown">♕</div>
+        <div class="hero-kicker clean-kicker">Welcome to my world</div>
+        <h1 class="hero-title clean-title">Sara</h1>
+        <div class="hero-tagline clean-tagline">You light up every corner of my world.</div>
+        <div class="ornament clean-ornament"><button class="heart-gem love-gem-btn" id="loveGemBtn" type="button" aria-label="Open a little question"></button></div>
+        <div class="clean-time-wrap">
+          <span class="clean-time-label">Lantern time</span>
+          <time class="clean-time" id="heroTime">--:--</time>
+        </div>
+        <div class="home-quote floating-quote">In a world full of stars, you are my brightest one.</div>
+        <div class="compliment-pop" id="complimentPop"></div>
+      </div>
+    </section>
+
+    <article class="feature-card glass corner-card gallery-corner-card" data-tilt>
+      <div class="card-copy">
+        <h2>Gallery</h2>
+        <p>Moments we’ll treasure forever.</p>
+      </div>
+      <img class="card-art" src="assets/gallery-stack.jpg" alt="Polaroid memories">
+      <a class="card-link" href="gallery.html">View Gallery <span>→</span></a>
+    </article>
+  </section>
+
+
+  <section class="home-story-extensions" aria-label="Our story and moments">
+    <section class="home-story-section memory-lane-section">
+      <div class="home-section-heading">
+        <span class="home-section-kicker">Our story, written in light</span>
+        <h2>Memory Lane</h2>
+        <p>Little chapters that brought us here, glowing one by one.</p>
+      </div>
+      <div class="memory-lane" id="homeMemoryLane">
+        <div class="home-story-empty">Our first memory will glow here.</div>
+      </div>
+    </section>
+
+    <section class="home-story-section moments-section">
+      <div class="home-section-heading moments-heading">
+        <div>
+          <span class="home-section-kicker">Tiny pieces of forever</span>
+          <h2>Moments</h2>
+          <p>The quiet, silly, beautiful things worth keeping close.</p>
+        </div>
+        <a class="story-text-link" href="gallery.html">Open gallery <span>→</span></a>
+      </div>
+      <div class="home-moments-grid" id="homeMomentsGrid">
+        <div class="home-story-empty">Our little moments will appear here.</div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<div class="home-magic-fixed" aria-label="Live love controls">
+  <div class="home-magic-dock glass">
+    <span class="presence-mini" id="presencePill">Yousha is away</span>
+    <span class="magic-mini-info miss-counter-pill">♡ Miss <b id="missMiniCount">Y 0 · M 0</b></span>
+    <button class="magic-mini-btn" id="complimentBtn" type="button">✦ Compliment</button>
+    <span class="magic-mini-info" id="birthdayMini">Birthday</span>
+    <a class="magic-mini-btn" href="congrats.html">Surprise ✦</a>
+    <span class="magic-actor">as <b id="homeActor">Sara</b></span>
+  </div>
+  <div class="compliment-pop fixed-compliment-pop" id="fixedComplimentPop" aria-live="polite"></div>
+</div>
+
+<button class="floating-miss-btn" id="missYouBtn" type="button" aria-label="Send I miss you">
+  <span class="floating-miss-heart">♡</span>
+  <span>Miss you</span>
+</button>
+
+<div class="love-modal" id="loveModal" aria-hidden="true">
+  <div class="love-modal-card glass">
+    <button class="love-modal-close" data-close-love type="button">×</button>
+    <div class="eyebrow">One tiny question</div>
+    <h2>Do you love me?</h2>
+    <p>A little answer, kept in our lantern-lit world.</p>
+    <div class="love-modal-actions">
+      <button class="primary" data-love-answer="yes" type="button">Yes ♡</button>
+      <button class="ghost" data-love-answer="no" type="button">No</button>
+    </div>
+  </div>
+</div><script type="module" src="logout.js"></script><script type="module" src="app.js"></script></body></html>

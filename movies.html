@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sara — Movie Night</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="auth-lock.css"><script type="module" src="auth-guard.js"></script></head><body data-page="movies"><div class="lantern-layer"></div><header class="site-header"><a class="brand" href="index.html">Sara</a><nav class="nav"><a href="index.html" data-page="home">Home</a><a href="letters.html" data-page="letters">Letters</a><a href="gallery.html" data-page="gallery">Gallery</a><a href="chat.html" data-page="chat">Chat</a><a href="movies.html" data-page="movies">Movie Night</a><a href="wishes.html" data-page="wishes">Wishes</a></nav><div class="header-actions"><a class="icon-btn" href="index.html" title="Home">⌂</a><a class="icon-btn" href="admin.html" title="Admin">⚙</a><button class="icon-btn" id="orizaLogout" title="Logout">↪</button></div></header><main class="inner-shell"><section class="page-hero-small"><div class="eyebrow">Royal Movie Night</div><h1>Pick something magical</h1><p>A little watchlist for nights that need popcorn and lantern light.</p></section><section class="panel glass movie-search-panel">
+<div class="field">
+<label>Search Movie</label>
+<input id="movieTitle" autocomplete="off" placeholder="Search Spider-Man...">
+</div>
+<div id="tmdbResults" class="tmdb-results"></div>
+<div class="field">
+<label>Note</label>
+<input id="movieNote" placeholder="Why this one?">
+</div>
+<button class="primary" id="addSelectedMovie" type="button">Add Movie</button>
+<button class="ghost" type="button" id="pickMovie">Pick Tonight ✦</button>
+</section>
+
+<div class="movie-gap"></div>
+<h2 class="movie-wishlist-title">✦ Wishlist Movies ✦</h2>
+<section class="movie-grid" id="movieGrid"></section></main><script type="module" src="logout.js"></script><script type="module" src="app.js"></script></body></html>

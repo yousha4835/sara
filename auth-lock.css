@@ -1,0 +1,7 @@
+
+html.oriza-authorized body{} 
+#orizaAuthLock{position:fixed;inset:0;z-index:999999;background:rgba(8,3,20,.98);display:flex;align-items:center;justify-content:center;color:white;font-family:inherit}
+.oriza-lock-card{width:min(92vw,420px);padding:40px;border-radius:24px;background:linear-gradient(145deg,#29134d,#10051f);box-shadow:0 0 80px rgba(255,210,100,.25);text-align:center}
+.oriza-lock-card input{width:100%;box-sizing:border-box;padding:14px;margin:8px 0;border-radius:12px;border:1px solid #ffffff44;background:#fff;color:#222}
+.oriza-lock-card button{width:100%;padding:14px;border:0;border-radius:12px;margin-top:12px;cursor:pointer;background:#ffd56a;color:#32134c;font-weight:700}
+.oriza-lock-card small{display:block;margin-top:15px}

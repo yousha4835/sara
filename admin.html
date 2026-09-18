@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sara — Admin</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="auth-lock.css"><script type="module" src="admin-guard.js"></script></head><body data-page="admin"><div class="lantern-layer"></div>
+<header class="site-header"><a class="brand" href="index.html">Sara</a><nav class="nav"><a href="index.html" data-page="home">Home</a><a href="letters.html" data-page="letters">Letters</a><a href="gallery.html" data-page="gallery">Gallery</a><a href="chat.html" data-page="chat">Chat</a><a href="movies.html" data-page="movies">Movie Night</a><a href="wishes.html" data-page="wishes">Wishes</a></nav><div class="header-actions"><a class="icon-btn" href="index.html">⌂</a><button class="icon-btn" id="orizaLogout" title="Logout">↪</button></div></header>
+<main class="inner-shell"><section class="page-hero-small"><div class="eyebrow">Private castle controls</div><h1>Admin</h1><p class="admin-status">Admin sign-in required</p></section>
+<section class="panel glass admin-login-panel" id="adminLogin"><h2>Unlock the castle</h2><form class="form-grid" id="loginForm"><div class="field"><label>Email</label><input type="email" id="adminEmail" value="2024000000167@seu.edu.bd" required autocomplete="email"></div><div class="field"><label>Password</label><input type="password" id="adminPassword" required autocomplete="current-password"></div><button class="primary">Sign in</button></form><p id="adminMessage"></p></section>
+<section id="adminPanel" hidden><div class="admin-top-actions"><button class="ghost" id="logoutBtn">Log out</button></div><div class="admin-dashboard">
+<article class="panel glass"><h2>Letters</h2><form class="form-grid" id="adminLetterForm"><div class="field"><label>Title</label><input id="adminLetterTitle" required></div><div class="field"><label>Letter</label><textarea id="adminLetterBody" required></textarea></div><button class="primary">Save letter</button></form><div class="admin-list" id="adminLettersList"></div></article>
+<article class="panel glass"><h2>Gallery</h2><div class="form-grid"><div class="field"><label>Caption</label><input id="adminGalleryCaption"></div><div class="field"><label>Photo</label><input type="file" id="adminGalleryInput" accept="image/*" multiple></div></div><div class="admin-list" id="adminGalleryList"></div></article>
+<article class="panel glass"><h2>Compliments</h2><form class="form-grid" id="adminComplimentForm"><div class="field"><label>Sweet line</label><textarea id="adminCompliment" required></textarea></div><button class="primary">Add compliment</button></form><div class="admin-list" id="adminComplimentsList"></div></article>
+<article class="panel glass"><h2>Wish Lanterns</h2><div class="admin-list" id="adminWishesList"></div></article><article class="panel glass"><h2>Food Wishlist</h2><p><a class="card-link" href="food.html">Open Food Corner →</a></p><div class="admin-list" id="adminFoodList"></div></article><article class="panel glass"><h2>Love Answers</h2><p><button class="ghost" id="missYouBtn" type="button">♡ Send I miss you ping</button></p><div class="admin-list" id="adminLoveList"></div></article>
+
+<article class="panel glass"><h2>Memory Lane</h2>
+<form class="form-grid" id="adminTimelineForm">
+<div class="field"><label>Title</label><input id="adminTimelineTitle" required></div>
+<div class="field"><label>Date</label><input type="date" id="adminTimelineDate"></div>
+<div class="field"><label>Story</label><textarea id="adminTimelineText" required></textarea></div>
+<button class="primary">Add Memory</button>
+</form>
+<div class="admin-list" id="adminTimelineList"></div>
+</article>
+
+<article class="panel glass"><h2>Moments</h2>
+<form class="form-grid" id="adminMomentForm">
+<div class="field"><label>Title</label><input id="adminMomentTitle" required></div>
+<div class="field"><label>Date</label><input type="date" id="adminMomentDate"></div>
+<div class="field"><label>Description</label><textarea id="adminMomentText" required></textarea></div>
+<div class="field">
+<label>Moment Photo</label>
+<input type="file" id="adminMomentFile" accept="image/*">
+<input type="hidden" id="adminMomentImage">
+<img id="adminMomentPreview" class="admin-image-preview" style="display:none;max-width:220px;border-radius:15px;margin-top:10px;">
+</div>
+<button class="primary">Add Moment</button>
+</form>
+<div class="admin-list" id="adminMomentsList"></div>
+</article>
+<article class="panel glass admin-wide"><h2>Birthday Surprise</h2><form class="form-grid" id="adminCongratsForm"><div class="field"><label>Title</label><input id="adminCongratsTitle" required></div><div class="field"><label>Message</label><textarea id="adminCongratsMessage" required></textarea></div><label class="admin-check"><input type="checkbox" id="adminCongratsActive" checked> Celebration active</label><button class="primary">Save celebration</button></form><p class="empty-state">Surprise opens only on April 20th. No self-destruct.</p></article>
+</div></section></main><script type="module" src="logout.js"></script><script type="module" src="app.js"></script></body></html>
